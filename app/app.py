@@ -6,9 +6,14 @@ from geopy.distance import geodesic
 import pandas as pd
 import plotly.express as px
 
+import os
+print("Current Working Directory:", os.getcwd())
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_dir, "model.pkl")
 
 # Logistic Regression model load
-with open("model.pkl", "rb") as f:
+with open(model_path, "rb") as f:
     model = pickle.load(f)
 
 # hospital data load
