@@ -17,7 +17,9 @@ with open(model_path, "rb") as f:
     model = pickle.load(f)
 
 # hospital data load
-hospital_data = pd.read_csv("hospital_data.csv")
+current_dir = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(current_dir, "hospital_data.csv")
+hospital_data = pd.read_csv(data_path)
 
 # function for searching the nearest healthcare facility
 def find_nearest_hospital(user_lat, user_lon):
