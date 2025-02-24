@@ -135,7 +135,9 @@ def forecaster(month, year, df):
 
 
 # Streamlit UI
-st.title("Desease Prediction and HealthCare Accessibility Determination System")
+st.title("Sudan Disease Prediction and HealthCare Accessibility Determination System")
+
+# page = st.sidebar.radio("Select the page", ["malaria", "healthcare"])
 
 ###1page
 ###malaria outbreak probability
