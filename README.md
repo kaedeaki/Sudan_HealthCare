@@ -1,4 +1,4 @@
-# Sudan HealthCare  
+# SudanDdisease Prediction and HealthCare Accessibility  
 
 ## Project Summary  
 
