@@ -14,9 +14,11 @@ from sklearn.linear_model import LogisticRegression
 
 st.cache_data.clear()
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(current_dir, "omdena_logo.png")
+
 st.image("omdena_logo.png", width=200)
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
 
 #malaria
 #load the ndwi and ndvi data from the folder
