@@ -11,17 +11,17 @@ from streamlit_folium import st_folium
 from datetime import date, timedelta
 from prophet import Prophet
 from sklearn.linear_model import LogisticRegression
-from PIL import Image
+#from PIL import Image
 
 st.cache_data.clear()
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-# logo_path = os.path.join(current_dir, "omdena_logo.png")
+logo_path = os.path.join(current_dir, "assets", "omdena_logo.png")
 
-image_path = os.path.join(os.path.dirname(__file__), "omdena_logo.png")
-image = Image.open(image_path)
+# image_path = os.path.join(os.path.dirname(__file__), "omdena_logo.png")
+# image = Image.open(image_path)
 
-st.image("omdena_logo.png", width=200)
+st.image(logo_path, width=200)
 
 
 #malaria
