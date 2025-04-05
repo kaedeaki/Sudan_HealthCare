@@ -12,6 +12,7 @@ from datetime import date, timedelta
 from prophet import Prophet
 from sklearn.linear_model import LogisticRegression
 
+st.image("omdena_logo.png", width=200)
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
